@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { AddemployeeComponent } from './addemployee/addemployee.component';
+import { EmployeelistComponent } from './employeelist/employeelist.component';
+import { EditemployeeComponent } from './editemployee/editemployee.component';
 
 
 const routes: Routes = [
-  { path: "Employees", component:},
-  { path: "AddEmployee", component:},
-  { path: "EditEmployee", component:},
+  { path: "Employees", component: EmployeelistComponent },
+  { path: "AddEmployee", component: AddemployeeComponent },
+  { path: "EditEmployee", component: EditemployeeComponent },
   { path: "**", redirectTo: 'Employees' }
 ];
 

@@ -20,6 +20,7 @@ export class EmployeedetailComponent implements OnInit {
   }
 
   editEmployee() {
+    console.log("hiello");
     this.router.navigate(["EditEmployee/" + this.employee.id]);
   }
 

@@ -15,8 +15,10 @@ export class EditemployeeComponent implements OnInit {
   constructor(private employeeService: EmployeeService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
+    console.log("EditemployeeComponent");
     var id = this.route.snapshot.params["id"];
     this.employee = this.employeeService.getEmployee(id);
+
   }
 
   updateEmployee() {
